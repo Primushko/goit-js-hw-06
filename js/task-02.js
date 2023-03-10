@@ -23,8 +23,10 @@ const createListItem = (text) => {
 const listItems = ingredients.map((ingredient) => createListItem(ingredient));
 ul.append(...listItems);
 // за допомогою методу "querySelector" получаємо посилання на елемент "ul"
+
 // за допомогою функції "createListItem" створюємо елемент "li", вставляємо текст і 
 // добавляємо клас "item". після функція повертає створений елемент.
+
 // за допомогою методу "map" преобразовуємо масив "ingredients" в масив
 // елементів "li" використовуючи функцію "createListItem".
 // за допомогою метода "append" використовуємо "..." для вставки всіх елементів списка 
