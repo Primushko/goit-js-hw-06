@@ -12,3 +12,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// отртимуємо посилання на елемент ul.galery
+const galleryList = document.querySelector(`ul.gallery`);
+// створюємо рядки HTML для кожного елементу масиву images
+const galleryItems = images.map(
+    (image) => `
+  <li>
+    <img src="${image.url}" alt="${image.alt}">
+  </li>`).join("");
+// додаємо елементи галареї за одну операцію додавання
+galleryList.insertAdjacentHTML("beforeend", galleryItems);
+// Додаємо CSS клас для оформлення галереї за допомогою Flexbox
+galleryList.classList.add("gallery--flexbox");
+
