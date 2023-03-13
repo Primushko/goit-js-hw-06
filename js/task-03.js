@@ -23,5 +23,5 @@ const galleryItems = images.map(
 // додаємо елементи галареї за одну операцію додавання
 galleryList.insertAdjacentHTML("beforeend", galleryItems);
 // Додаємо CSS клас для оформлення галереї за допомогою Flexbox
-galleryList.classList.add("gallery--flexbox");
+galleryList.classList.add("gallery");
 
