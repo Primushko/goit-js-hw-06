@@ -1,7 +1,9 @@
 const nameInput = document.getElementById("name-input");
-// Створив змінну nameInput
 const nameOutput = document.getElementById("name-output");
-// Створив змінну nameOutput
+// за допомогою методу getElementById створюю змінні nameInput та nameOutput щоб отримати
+// доступ до елементів з ідентифікаторами "name-input" та "name-output"
+// Далі за допомогою методу addEventListener() встановлюється слухач подій на елемент "name-input".
+//  Подія "input" виникає, коли користувач вводить нові дані в поле вводу.
 nameInput.addEventListener("input", () => {
     if (nameInput.value === "") {
         nameOutput.textContent = "Anonymous";
